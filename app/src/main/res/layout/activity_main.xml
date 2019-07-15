@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvTitulo"
+              android:text="@string/formulario"
+              android:textSize="30sp"
+              android:gravity="center_horizontal"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:textAllCaps="true"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNombre"
+                android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCorreo"
+            android:inputType="textEmailAddress"
+            android:hint="@string/correo"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDocumento"
+            android:inputType="number"
+            android:hint="@string/Documento"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Layouts"
+            android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/rbmasculino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/masculino"
+                    android:textSize="18sp"
+                    android:checked="true"/>
+            <RadioButton
+                    android:id="@+id/rbfemenino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/femenino"
+                    android:textSize="18sp" />
+    </RadioGroup>
+    <Button
+            android:text="@string/Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bnGuardar"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+    <TextView
+            android:text="@string/Resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TvResultado"
+            android:textColor="@color/red"
+            android:textSize="20sp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hola Android</string>
+    <string name="formulario">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo</string>
+    <string name="Documento">Numero de documento</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Resultado">Resultado</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+</resources>
